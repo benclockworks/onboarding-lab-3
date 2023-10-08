@@ -1,0 +1,1 @@
+/opt/homebrew/bin/verilator_bin;--compiler;clang;--prefix;VExercise2;--Mdir;/Users/benchikbayor/Desktop/onboarding-lab-3/CMakeFiles/exercise2.dir/VExercise2.dir;--make;cmake;--top;Exercise2;--coverage;--cc;/Users/benchikbayor/Desktop/onboarding-lab-3/rtl/Exercise2.sv

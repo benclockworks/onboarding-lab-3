@@ -1,0 +1,742 @@
+// Verilated -*- C++ -*-
+// DESCRIPTION: Verilator output: Design implementation internals
+// See VExercise3.h for the primary calling header
+
+#include "verilated.h"
+
+#include "VExercise3__Syms.h"
+#include "VExercise3__Syms.h"
+#include "VExercise3___024root.h"
+
+#ifdef VL_DEBUG
+VL_ATTR_COLD void VExercise3___024root___dump_triggers__ico(VExercise3___024root* vlSelf);
+#endif  // VL_DEBUG
+
+void VExercise3___024root___eval_triggers__ico(VExercise3___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    VExercise3__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    VExercise3___024root___eval_triggers__ico\n"); );
+    // Body
+    vlSelf->__VicoTriggered.set(0U, (0U == vlSelf->__VicoIterCount));
+#ifdef VL_DEBUG
+    if (VL_UNLIKELY(vlSymsp->_vm_contextp__->debug())) {
+        VExercise3___024root___dump_triggers__ico(vlSelf);
+    }
+#endif
+}
+
+VL_INLINE_OPT void VExercise3___024root___ico_sequent__TOP__0(VExercise3___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    VExercise3__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    VExercise3___024root___ico_sequent__TOP__0\n"); );
+    // Body
+    if ((0U == (3U & (IData)(vlSelf->a)))) {
+        vlSymsp->__Vcoverage[70].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT__a_in = ((0xc0U & ((IData)(vlSelf->a) 
+                                                  << 6U)) 
+                                        | ((0x38U & 
+                                            ((IData)(vlSelf->b) 
+                                             << 3U)) 
+                                           | (7U & (IData)(vlSelf->c))));
+    } else if ((1U == (3U & (IData)(vlSelf->a)))) {
+        vlSelf->Exercise3__DOT__a_in = ((0xc0U & ((IData)(vlSelf->a) 
+                                                  << 6U)) 
+                                        | ((0x38U & 
+                                            ((IData)(vlSelf->c) 
+                                             << 3U)) 
+                                           | (7U & (IData)(vlSelf->b))));
+    } else if ((2U == (3U & (IData)(vlSelf->a)))) {
+        vlSelf->Exercise3__DOT__a_in = (0xffU & (IData)(vlSelf->b));
+    } else if ((3U == (3U & (IData)(vlSelf->a)))) {
+        vlSelf->Exercise3__DOT__a_in = (0xffU & (IData)(vlSelf->c));
+    }
+    if ((0U != (3U & (IData)(vlSelf->a)))) {
+        if ((1U == (3U & (IData)(vlSelf->a)))) {
+            vlSymsp->__Vcoverage[71].fetch_add(1, std::memory_order_relaxed);
+        }
+        if ((1U != (3U & (IData)(vlSelf->a)))) {
+            if ((2U == (3U & (IData)(vlSelf->a)))) {
+                vlSymsp->__Vcoverage[72].fetch_add(1, std::memory_order_relaxed);
+            }
+            if ((2U != (3U & (IData)(vlSelf->a)))) {
+                if ((3U == (3U & (IData)(vlSelf->a)))) {
+                    vlSymsp->__Vcoverage[73].fetch_add(1, std::memory_order_relaxed);
+                }
+            }
+        }
+    }
+    if ((0U == (3U & ((IData)(vlSelf->a) >> 2U)))) {
+        vlSymsp->__Vcoverage[75].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT__b_in = ((0xc0U & ((IData)(vlSelf->a) 
+                                                  << 4U)) 
+                                        | ((0x38U & 
+                                            ((IData)(vlSelf->b) 
+                                             >> 5U)) 
+                                           | (7U & 
+                                              ((IData)(vlSelf->c) 
+                                               >> 8U))));
+    } else if ((1U == (3U & ((IData)(vlSelf->a) >> 2U)))) {
+        vlSelf->Exercise3__DOT__b_in = ((0xc0U & ((IData)(vlSelf->a) 
+                                                  << 4U)) 
+                                        | ((0x38U & 
+                                            ((IData)(vlSelf->c) 
+                                             >> 5U)) 
+                                           | (7U & 
+                                              ((IData)(vlSelf->b) 
+                                               >> 8U))));
+    } else if ((2U == (3U & ((IData)(vlSelf->a) >> 2U)))) {
+        vlSelf->Exercise3__DOT__b_in = (0xffU & ((IData)(vlSelf->b) 
+                                                 >> 8U));
+    } else if ((3U == (3U & ((IData)(vlSelf->a) >> 2U)))) {
+        vlSelf->Exercise3__DOT__b_in = (0xffU & ((IData)(vlSelf->c) 
+                                                 >> 8U));
+    }
+    if ((0U != (3U & ((IData)(vlSelf->a) >> 2U)))) {
+        if ((1U == (3U & ((IData)(vlSelf->a) >> 2U)))) {
+            vlSymsp->__Vcoverage[76].fetch_add(1, std::memory_order_relaxed);
+        }
+        if ((1U != (3U & ((IData)(vlSelf->a) >> 2U)))) {
+            if ((2U == (3U & ((IData)(vlSelf->a) >> 2U)))) {
+                vlSymsp->__Vcoverage[77].fetch_add(1, std::memory_order_relaxed);
+            }
+            if ((2U != (3U & ((IData)(vlSelf->a) >> 2U)))) {
+                if ((3U == (3U & ((IData)(vlSelf->a) 
+                                  >> 2U)))) {
+                    vlSymsp->__Vcoverage[78].fetch_add(1, std::memory_order_relaxed);
+                }
+            }
+        }
+    }
+    if (((IData)(vlSelf->clk) ^ (IData)(vlSelf->Exercise3__DOT____Vtogcov__clk))) {
+        vlSymsp->__Vcoverage[0].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT____Vtogcov__clk = vlSelf->clk;
+    }
+    if (((IData)(vlSelf->reset) ^ (IData)(vlSelf->Exercise3__DOT____Vtogcov__reset))) {
+        vlSymsp->__Vcoverage[1].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT____Vtogcov__reset = vlSelf->reset;
+    }
+    if ((1U & ((IData)(vlSelf->a) ^ (IData)(vlSelf->Exercise3__DOT____Vtogcov__a)))) {
+        vlSymsp->__Vcoverage[2].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT____Vtogcov__a = ((0xeU 
+                                                 & (IData)(vlSelf->Exercise3__DOT____Vtogcov__a)) 
+                                                | (1U 
+                                                   & (IData)(vlSelf->a)));
+    }
+    if ((2U & ((IData)(vlSelf->a) ^ (IData)(vlSelf->Exercise3__DOT____Vtogcov__a)))) {
+        vlSymsp->__Vcoverage[3].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT____Vtogcov__a = ((0xdU 
+                                                 & (IData)(vlSelf->Exercise3__DOT____Vtogcov__a)) 
+                                                | (2U 
+                                                   & (IData)(vlSelf->a)));
+    }
+    if ((4U & ((IData)(vlSelf->a) ^ (IData)(vlSelf->Exercise3__DOT____Vtogcov__a)))) {
+        vlSymsp->__Vcoverage[4].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT____Vtogcov__a = ((0xbU 
+                                                 & (IData)(vlSelf->Exercise3__DOT____Vtogcov__a)) 
+                                                | (4U 
+                                                   & (IData)(vlSelf->a)));
+    }
+    if ((8U & ((IData)(vlSelf->a) ^ (IData)(vlSelf->Exercise3__DOT____Vtogcov__a)))) {
+        vlSymsp->__Vcoverage[5].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT____Vtogcov__a = ((7U 
+                                                 & (IData)(vlSelf->Exercise3__DOT____Vtogcov__a)) 
+                                                | (8U 
+                                                   & (IData)(vlSelf->a)));
+    }
+    if ((1U & ((IData)(vlSelf->b) ^ (IData)(vlSelf->Exercise3__DOT____Vtogcov__b)))) {
+        vlSymsp->__Vcoverage[6].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT____Vtogcov__b = ((0xfffeU 
+                                                 & (IData)(vlSelf->Exercise3__DOT____Vtogcov__b)) 
+                                                | (1U 
+                                                   & (IData)(vlSelf->b)));
+    }
+    if ((2U & ((IData)(vlSelf->b) ^ (IData)(vlSelf->Exercise3__DOT____Vtogcov__b)))) {
+        vlSymsp->__Vcoverage[7].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT____Vtogcov__b = ((0xfffdU 
+                                                 & (IData)(vlSelf->Exercise3__DOT____Vtogcov__b)) 
+                                                | (2U 
+                                                   & (IData)(vlSelf->b)));
+    }
+    if ((4U & ((IData)(vlSelf->b) ^ (IData)(vlSelf->Exercise3__DOT____Vtogcov__b)))) {
+        vlSymsp->__Vcoverage[8].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT____Vtogcov__b = ((0xfffbU 
+                                                 & (IData)(vlSelf->Exercise3__DOT____Vtogcov__b)) 
+                                                | (4U 
+                                                   & (IData)(vlSelf->b)));
+    }
+    if ((8U & ((IData)(vlSelf->b) ^ (IData)(vlSelf->Exercise3__DOT____Vtogcov__b)))) {
+        vlSymsp->__Vcoverage[9].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT____Vtogcov__b = ((0xfff7U 
+                                                 & (IData)(vlSelf->Exercise3__DOT____Vtogcov__b)) 
+                                                | (8U 
+                                                   & (IData)(vlSelf->b)));
+    }
+    if ((0x10U & ((IData)(vlSelf->b) ^ (IData)(vlSelf->Exercise3__DOT____Vtogcov__b)))) {
+        vlSymsp->__Vcoverage[10].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT____Vtogcov__b = ((0xffefU 
+                                                 & (IData)(vlSelf->Exercise3__DOT____Vtogcov__b)) 
+                                                | (0x10U 
+                                                   & (IData)(vlSelf->b)));
+    }
+    if ((0x20U & ((IData)(vlSelf->b) ^ (IData)(vlSelf->Exercise3__DOT____Vtogcov__b)))) {
+        vlSymsp->__Vcoverage[11].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT____Vtogcov__b = ((0xffdfU 
+                                                 & (IData)(vlSelf->Exercise3__DOT____Vtogcov__b)) 
+                                                | (0x20U 
+                                                   & (IData)(vlSelf->b)));
+    }
+    if ((0x40U & ((IData)(vlSelf->b) ^ (IData)(vlSelf->Exercise3__DOT____Vtogcov__b)))) {
+        vlSymsp->__Vcoverage[12].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT____Vtogcov__b = ((0xffbfU 
+                                                 & (IData)(vlSelf->Exercise3__DOT____Vtogcov__b)) 
+                                                | (0x40U 
+                                                   & (IData)(vlSelf->b)));
+    }
+    if ((0x80U & ((IData)(vlSelf->b) ^ (IData)(vlSelf->Exercise3__DOT____Vtogcov__b)))) {
+        vlSymsp->__Vcoverage[13].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT____Vtogcov__b = ((0xff7fU 
+                                                 & (IData)(vlSelf->Exercise3__DOT____Vtogcov__b)) 
+                                                | (0x80U 
+                                                   & (IData)(vlSelf->b)));
+    }
+    if ((0x100U & ((IData)(vlSelf->b) ^ (IData)(vlSelf->Exercise3__DOT____Vtogcov__b)))) {
+        vlSymsp->__Vcoverage[14].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT____Vtogcov__b = ((0xfeffU 
+                                                 & (IData)(vlSelf->Exercise3__DOT____Vtogcov__b)) 
+                                                | (0x100U 
+                                                   & (IData)(vlSelf->b)));
+    }
+    if ((0x200U & ((IData)(vlSelf->b) ^ (IData)(vlSelf->Exercise3__DOT____Vtogcov__b)))) {
+        vlSymsp->__Vcoverage[15].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT____Vtogcov__b = ((0xfdffU 
+                                                 & (IData)(vlSelf->Exercise3__DOT____Vtogcov__b)) 
+                                                | (0x200U 
+                                                   & (IData)(vlSelf->b)));
+    }
+    if ((0x400U & ((IData)(vlSelf->b) ^ (IData)(vlSelf->Exercise3__DOT____Vtogcov__b)))) {
+        vlSymsp->__Vcoverage[16].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT____Vtogcov__b = ((0xfbffU 
+                                                 & (IData)(vlSelf->Exercise3__DOT____Vtogcov__b)) 
+                                                | (0x400U 
+                                                   & (IData)(vlSelf->b)));
+    }
+    if ((0x800U & ((IData)(vlSelf->b) ^ (IData)(vlSelf->Exercise3__DOT____Vtogcov__b)))) {
+        vlSymsp->__Vcoverage[17].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT____Vtogcov__b = ((0xf7ffU 
+                                                 & (IData)(vlSelf->Exercise3__DOT____Vtogcov__b)) 
+                                                | (0x800U 
+                                                   & (IData)(vlSelf->b)));
+    }
+    if ((0x1000U & ((IData)(vlSelf->b) ^ (IData)(vlSelf->Exercise3__DOT____Vtogcov__b)))) {
+        vlSymsp->__Vcoverage[18].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT____Vtogcov__b = ((0xefffU 
+                                                 & (IData)(vlSelf->Exercise3__DOT____Vtogcov__b)) 
+                                                | (0x1000U 
+                                                   & (IData)(vlSelf->b)));
+    }
+    if ((0x2000U & ((IData)(vlSelf->b) ^ (IData)(vlSelf->Exercise3__DOT____Vtogcov__b)))) {
+        vlSymsp->__Vcoverage[19].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT____Vtogcov__b = ((0xdfffU 
+                                                 & (IData)(vlSelf->Exercise3__DOT____Vtogcov__b)) 
+                                                | (0x2000U 
+                                                   & (IData)(vlSelf->b)));
+    }
+    if ((0x4000U & ((IData)(vlSelf->b) ^ (IData)(vlSelf->Exercise3__DOT____Vtogcov__b)))) {
+        vlSymsp->__Vcoverage[20].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT____Vtogcov__b = ((0xbfffU 
+                                                 & (IData)(vlSelf->Exercise3__DOT____Vtogcov__b)) 
+                                                | (0x4000U 
+                                                   & (IData)(vlSelf->b)));
+    }
+    if ((0x8000U & ((IData)(vlSelf->b) ^ (IData)(vlSelf->Exercise3__DOT____Vtogcov__b)))) {
+        vlSymsp->__Vcoverage[21].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT____Vtogcov__b = ((0x7fffU 
+                                                 & (IData)(vlSelf->Exercise3__DOT____Vtogcov__b)) 
+                                                | (0x8000U 
+                                                   & (IData)(vlSelf->b)));
+    }
+    if ((1U & ((IData)(vlSelf->c) ^ (IData)(vlSelf->Exercise3__DOT____Vtogcov__c)))) {
+        vlSymsp->__Vcoverage[22].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT____Vtogcov__c = ((0xfffeU 
+                                                 & (IData)(vlSelf->Exercise3__DOT____Vtogcov__c)) 
+                                                | (1U 
+                                                   & (IData)(vlSelf->c)));
+    }
+    if ((2U & ((IData)(vlSelf->c) ^ (IData)(vlSelf->Exercise3__DOT____Vtogcov__c)))) {
+        vlSymsp->__Vcoverage[23].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT____Vtogcov__c = ((0xfffdU 
+                                                 & (IData)(vlSelf->Exercise3__DOT____Vtogcov__c)) 
+                                                | (2U 
+                                                   & (IData)(vlSelf->c)));
+    }
+    if ((4U & ((IData)(vlSelf->c) ^ (IData)(vlSelf->Exercise3__DOT____Vtogcov__c)))) {
+        vlSymsp->__Vcoverage[24].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT____Vtogcov__c = ((0xfffbU 
+                                                 & (IData)(vlSelf->Exercise3__DOT____Vtogcov__c)) 
+                                                | (4U 
+                                                   & (IData)(vlSelf->c)));
+    }
+    if ((8U & ((IData)(vlSelf->c) ^ (IData)(vlSelf->Exercise3__DOT____Vtogcov__c)))) {
+        vlSymsp->__Vcoverage[25].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT____Vtogcov__c = ((0xfff7U 
+                                                 & (IData)(vlSelf->Exercise3__DOT____Vtogcov__c)) 
+                                                | (8U 
+                                                   & (IData)(vlSelf->c)));
+    }
+    if ((0x10U & ((IData)(vlSelf->c) ^ (IData)(vlSelf->Exercise3__DOT____Vtogcov__c)))) {
+        vlSymsp->__Vcoverage[26].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT____Vtogcov__c = ((0xffefU 
+                                                 & (IData)(vlSelf->Exercise3__DOT____Vtogcov__c)) 
+                                                | (0x10U 
+                                                   & (IData)(vlSelf->c)));
+    }
+    if ((0x20U & ((IData)(vlSelf->c) ^ (IData)(vlSelf->Exercise3__DOT____Vtogcov__c)))) {
+        vlSymsp->__Vcoverage[27].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT____Vtogcov__c = ((0xffdfU 
+                                                 & (IData)(vlSelf->Exercise3__DOT____Vtogcov__c)) 
+                                                | (0x20U 
+                                                   & (IData)(vlSelf->c)));
+    }
+    if ((0x40U & ((IData)(vlSelf->c) ^ (IData)(vlSelf->Exercise3__DOT____Vtogcov__c)))) {
+        vlSymsp->__Vcoverage[28].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT____Vtogcov__c = ((0xffbfU 
+                                                 & (IData)(vlSelf->Exercise3__DOT____Vtogcov__c)) 
+                                                | (0x40U 
+                                                   & (IData)(vlSelf->c)));
+    }
+    if ((0x80U & ((IData)(vlSelf->c) ^ (IData)(vlSelf->Exercise3__DOT____Vtogcov__c)))) {
+        vlSymsp->__Vcoverage[29].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT____Vtogcov__c = ((0xff7fU 
+                                                 & (IData)(vlSelf->Exercise3__DOT____Vtogcov__c)) 
+                                                | (0x80U 
+                                                   & (IData)(vlSelf->c)));
+    }
+    if ((0x100U & ((IData)(vlSelf->c) ^ (IData)(vlSelf->Exercise3__DOT____Vtogcov__c)))) {
+        vlSymsp->__Vcoverage[30].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT____Vtogcov__c = ((0xfeffU 
+                                                 & (IData)(vlSelf->Exercise3__DOT____Vtogcov__c)) 
+                                                | (0x100U 
+                                                   & (IData)(vlSelf->c)));
+    }
+    if ((0x200U & ((IData)(vlSelf->c) ^ (IData)(vlSelf->Exercise3__DOT____Vtogcov__c)))) {
+        vlSymsp->__Vcoverage[31].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT____Vtogcov__c = ((0xfdffU 
+                                                 & (IData)(vlSelf->Exercise3__DOT____Vtogcov__c)) 
+                                                | (0x200U 
+                                                   & (IData)(vlSelf->c)));
+    }
+    if ((0x400U & ((IData)(vlSelf->c) ^ (IData)(vlSelf->Exercise3__DOT____Vtogcov__c)))) {
+        vlSymsp->__Vcoverage[32].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT____Vtogcov__c = ((0xfbffU 
+                                                 & (IData)(vlSelf->Exercise3__DOT____Vtogcov__c)) 
+                                                | (0x400U 
+                                                   & (IData)(vlSelf->c)));
+    }
+    if ((0x800U & ((IData)(vlSelf->c) ^ (IData)(vlSelf->Exercise3__DOT____Vtogcov__c)))) {
+        vlSymsp->__Vcoverage[33].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT____Vtogcov__c = ((0xf7ffU 
+                                                 & (IData)(vlSelf->Exercise3__DOT____Vtogcov__c)) 
+                                                | (0x800U 
+                                                   & (IData)(vlSelf->c)));
+    }
+    if ((0x1000U & ((IData)(vlSelf->c) ^ (IData)(vlSelf->Exercise3__DOT____Vtogcov__c)))) {
+        vlSymsp->__Vcoverage[34].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT____Vtogcov__c = ((0xefffU 
+                                                 & (IData)(vlSelf->Exercise3__DOT____Vtogcov__c)) 
+                                                | (0x1000U 
+                                                   & (IData)(vlSelf->c)));
+    }
+    if ((0x2000U & ((IData)(vlSelf->c) ^ (IData)(vlSelf->Exercise3__DOT____Vtogcov__c)))) {
+        vlSymsp->__Vcoverage[35].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT____Vtogcov__c = ((0xdfffU 
+                                                 & (IData)(vlSelf->Exercise3__DOT____Vtogcov__c)) 
+                                                | (0x2000U 
+                                                   & (IData)(vlSelf->c)));
+    }
+    if ((0x4000U & ((IData)(vlSelf->c) ^ (IData)(vlSelf->Exercise3__DOT____Vtogcov__c)))) {
+        vlSymsp->__Vcoverage[36].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT____Vtogcov__c = ((0xbfffU 
+                                                 & (IData)(vlSelf->Exercise3__DOT____Vtogcov__c)) 
+                                                | (0x4000U 
+                                                   & (IData)(vlSelf->c)));
+    }
+    if ((0x8000U & ((IData)(vlSelf->c) ^ (IData)(vlSelf->Exercise3__DOT____Vtogcov__c)))) {
+        vlSymsp->__Vcoverage[37].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT____Vtogcov__c = ((0x7fffU 
+                                                 & (IData)(vlSelf->Exercise3__DOT____Vtogcov__c)) 
+                                                | (0x8000U 
+                                                   & (IData)(vlSelf->c)));
+    }
+    if ((1U & ((IData)(vlSelf->Exercise3__DOT__a_in) 
+               ^ (IData)(vlSelf->Exercise3__DOT____Vtogcov__a_in)))) {
+        vlSymsp->__Vcoverage[54].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT____Vtogcov__a_in = (
+                                                   (0xfeU 
+                                                    & (IData)(vlSelf->Exercise3__DOT____Vtogcov__a_in)) 
+                                                   | (1U 
+                                                      & (IData)(vlSelf->Exercise3__DOT__a_in)));
+    }
+    if ((2U & ((IData)(vlSelf->Exercise3__DOT__a_in) 
+               ^ (IData)(vlSelf->Exercise3__DOT____Vtogcov__a_in)))) {
+        vlSymsp->__Vcoverage[55].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT____Vtogcov__a_in = (
+                                                   (0xfdU 
+                                                    & (IData)(vlSelf->Exercise3__DOT____Vtogcov__a_in)) 
+                                                   | (2U 
+                                                      & (IData)(vlSelf->Exercise3__DOT__a_in)));
+    }
+    if ((4U & ((IData)(vlSelf->Exercise3__DOT__a_in) 
+               ^ (IData)(vlSelf->Exercise3__DOT____Vtogcov__a_in)))) {
+        vlSymsp->__Vcoverage[56].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT____Vtogcov__a_in = (
+                                                   (0xfbU 
+                                                    & (IData)(vlSelf->Exercise3__DOT____Vtogcov__a_in)) 
+                                                   | (4U 
+                                                      & (IData)(vlSelf->Exercise3__DOT__a_in)));
+    }
+    if ((8U & ((IData)(vlSelf->Exercise3__DOT__a_in) 
+               ^ (IData)(vlSelf->Exercise3__DOT____Vtogcov__a_in)))) {
+        vlSymsp->__Vcoverage[57].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT____Vtogcov__a_in = (
+                                                   (0xf7U 
+                                                    & (IData)(vlSelf->Exercise3__DOT____Vtogcov__a_in)) 
+                                                   | (8U 
+                                                      & (IData)(vlSelf->Exercise3__DOT__a_in)));
+    }
+    if ((0x10U & ((IData)(vlSelf->Exercise3__DOT__a_in) 
+                  ^ (IData)(vlSelf->Exercise3__DOT____Vtogcov__a_in)))) {
+        vlSymsp->__Vcoverage[58].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT____Vtogcov__a_in = (
+                                                   (0xefU 
+                                                    & (IData)(vlSelf->Exercise3__DOT____Vtogcov__a_in)) 
+                                                   | (0x10U 
+                                                      & (IData)(vlSelf->Exercise3__DOT__a_in)));
+    }
+    if ((0x20U & ((IData)(vlSelf->Exercise3__DOT__a_in) 
+                  ^ (IData)(vlSelf->Exercise3__DOT____Vtogcov__a_in)))) {
+        vlSymsp->__Vcoverage[59].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT____Vtogcov__a_in = (
+                                                   (0xdfU 
+                                                    & (IData)(vlSelf->Exercise3__DOT____Vtogcov__a_in)) 
+                                                   | (0x20U 
+                                                      & (IData)(vlSelf->Exercise3__DOT__a_in)));
+    }
+    if ((0x40U & ((IData)(vlSelf->Exercise3__DOT__a_in) 
+                  ^ (IData)(vlSelf->Exercise3__DOT____Vtogcov__a_in)))) {
+        vlSymsp->__Vcoverage[60].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT____Vtogcov__a_in = (
+                                                   (0xbfU 
+                                                    & (IData)(vlSelf->Exercise3__DOT____Vtogcov__a_in)) 
+                                                   | (0x40U 
+                                                      & (IData)(vlSelf->Exercise3__DOT__a_in)));
+    }
+    if ((0x80U & ((IData)(vlSelf->Exercise3__DOT__a_in) 
+                  ^ (IData)(vlSelf->Exercise3__DOT____Vtogcov__a_in)))) {
+        vlSymsp->__Vcoverage[61].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT____Vtogcov__a_in = (
+                                                   (0x7fU 
+                                                    & (IData)(vlSelf->Exercise3__DOT____Vtogcov__a_in)) 
+                                                   | (0x80U 
+                                                      & (IData)(vlSelf->Exercise3__DOT__a_in)));
+    }
+    if ((1U & ((IData)(vlSelf->Exercise3__DOT__b_in) 
+               ^ (IData)(vlSelf->Exercise3__DOT____Vtogcov__b_in)))) {
+        vlSymsp->__Vcoverage[62].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT____Vtogcov__b_in = (
+                                                   (0xfeU 
+                                                    & (IData)(vlSelf->Exercise3__DOT____Vtogcov__b_in)) 
+                                                   | (1U 
+                                                      & (IData)(vlSelf->Exercise3__DOT__b_in)));
+    }
+    if ((2U & ((IData)(vlSelf->Exercise3__DOT__b_in) 
+               ^ (IData)(vlSelf->Exercise3__DOT____Vtogcov__b_in)))) {
+        vlSymsp->__Vcoverage[63].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT____Vtogcov__b_in = (
+                                                   (0xfdU 
+                                                    & (IData)(vlSelf->Exercise3__DOT____Vtogcov__b_in)) 
+                                                   | (2U 
+                                                      & (IData)(vlSelf->Exercise3__DOT__b_in)));
+    }
+    if ((4U & ((IData)(vlSelf->Exercise3__DOT__b_in) 
+               ^ (IData)(vlSelf->Exercise3__DOT____Vtogcov__b_in)))) {
+        vlSymsp->__Vcoverage[64].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT____Vtogcov__b_in = (
+                                                   (0xfbU 
+                                                    & (IData)(vlSelf->Exercise3__DOT____Vtogcov__b_in)) 
+                                                   | (4U 
+                                                      & (IData)(vlSelf->Exercise3__DOT__b_in)));
+    }
+    if ((8U & ((IData)(vlSelf->Exercise3__DOT__b_in) 
+               ^ (IData)(vlSelf->Exercise3__DOT____Vtogcov__b_in)))) {
+        vlSymsp->__Vcoverage[65].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT____Vtogcov__b_in = (
+                                                   (0xf7U 
+                                                    & (IData)(vlSelf->Exercise3__DOT____Vtogcov__b_in)) 
+                                                   | (8U 
+                                                      & (IData)(vlSelf->Exercise3__DOT__b_in)));
+    }
+    if ((0x10U & ((IData)(vlSelf->Exercise3__DOT__b_in) 
+                  ^ (IData)(vlSelf->Exercise3__DOT____Vtogcov__b_in)))) {
+        vlSymsp->__Vcoverage[66].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT____Vtogcov__b_in = (
+                                                   (0xefU 
+                                                    & (IData)(vlSelf->Exercise3__DOT____Vtogcov__b_in)) 
+                                                   | (0x10U 
+                                                      & (IData)(vlSelf->Exercise3__DOT__b_in)));
+    }
+    if ((0x20U & ((IData)(vlSelf->Exercise3__DOT__b_in) 
+                  ^ (IData)(vlSelf->Exercise3__DOT____Vtogcov__b_in)))) {
+        vlSymsp->__Vcoverage[67].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT____Vtogcov__b_in = (
+                                                   (0xdfU 
+                                                    & (IData)(vlSelf->Exercise3__DOT____Vtogcov__b_in)) 
+                                                   | (0x20U 
+                                                      & (IData)(vlSelf->Exercise3__DOT__b_in)));
+    }
+    if ((0x40U & ((IData)(vlSelf->Exercise3__DOT__b_in) 
+                  ^ (IData)(vlSelf->Exercise3__DOT____Vtogcov__b_in)))) {
+        vlSymsp->__Vcoverage[68].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT____Vtogcov__b_in = (
+                                                   (0xbfU 
+                                                    & (IData)(vlSelf->Exercise3__DOT____Vtogcov__b_in)) 
+                                                   | (0x40U 
+                                                      & (IData)(vlSelf->Exercise3__DOT__b_in)));
+    }
+    if ((0x80U & ((IData)(vlSelf->Exercise3__DOT__b_in) 
+                  ^ (IData)(vlSelf->Exercise3__DOT____Vtogcov__b_in)))) {
+        vlSymsp->__Vcoverage[69].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT____Vtogcov__b_in = (
+                                                   (0x7fU 
+                                                    & (IData)(vlSelf->Exercise3__DOT____Vtogcov__b_in)) 
+                                                   | (0x80U 
+                                                      & (IData)(vlSelf->Exercise3__DOT__b_in)));
+    }
+}
+
+#ifdef VL_DEBUG
+VL_ATTR_COLD void VExercise3___024root___dump_triggers__act(VExercise3___024root* vlSelf);
+#endif  // VL_DEBUG
+
+void VExercise3___024root___eval_triggers__act(VExercise3___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    VExercise3__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    VExercise3___024root___eval_triggers__act\n"); );
+    // Body
+    vlSelf->__VactTriggered.set(0U, ((~ (IData)(vlSelf->clk)) 
+                                     & (IData)(vlSelf->__Vtrigprevexpr___TOP__clk__0)));
+    vlSelf->__Vtrigprevexpr___TOP__clk__0 = vlSelf->clk;
+#ifdef VL_DEBUG
+    if (VL_UNLIKELY(vlSymsp->_vm_contextp__->debug())) {
+        VExercise3___024root___dump_triggers__act(vlSelf);
+    }
+#endif
+}
+
+VL_INLINE_OPT void VExercise3___024root___nba_sequent__TOP__0(VExercise3___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    VExercise3__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    VExercise3___024root___nba_sequent__TOP__0\n"); );
+    // Init
+    SData/*15:0*/ __Vdly__out;
+    __Vdly__out = 0;
+    CData/*2:0*/ __Vdly__Exercise3__DOT__gamma__DOT__count;
+    __Vdly__Exercise3__DOT__gamma__DOT__count = 0;
+    // Body
+    vlSymsp->__Vcoverage[90].fetch_add(1, std::memory_order_relaxed);
+    if ((1U & (~ (IData)(vlSelf->reset)))) {
+        vlSymsp->__Vcoverage[89].fetch_add(1, std::memory_order_relaxed);
+        if ((0U != (IData)(vlSelf->Exercise3__DOT__gamma__DOT__count))) {
+            if ((1U != (IData)(vlSelf->Exercise3__DOT__gamma__DOT__count))) {
+                if ((2U != (IData)(vlSelf->Exercise3__DOT__gamma__DOT__count))) {
+                    if ((3U == (IData)(vlSelf->Exercise3__DOT__gamma__DOT__count))) {
+                        vlSymsp->__Vcoverage[86].fetch_add(1, std::memory_order_relaxed);
+                    }
+                    if ((3U != (IData)(vlSelf->Exercise3__DOT__gamma__DOT__count))) {
+                        if ((4U == (IData)(vlSelf->Exercise3__DOT__gamma__DOT__count))) {
+                            vlSymsp->__Vcoverage[87].fetch_add(1, std::memory_order_relaxed);
+                        }
+                    }
+                }
+                if ((2U == (IData)(vlSelf->Exercise3__DOT__gamma__DOT__count))) {
+                    vlSymsp->__Vcoverage[85].fetch_add(1, std::memory_order_relaxed);
+                }
+            }
+            if ((1U == (IData)(vlSelf->Exercise3__DOT__gamma__DOT__count))) {
+                vlSymsp->__Vcoverage[84].fetch_add(1, std::memory_order_relaxed);
+            }
+        }
+        if ((0U == (IData)(vlSelf->Exercise3__DOT__gamma__DOT__count))) {
+            vlSymsp->__Vcoverage[83].fetch_add(1, std::memory_order_relaxed);
+        }
+    }
+    __Vdly__Exercise3__DOT__gamma__DOT__count = vlSelf->Exercise3__DOT__gamma__DOT__count;
+    __Vdly__out = vlSelf->out;
+    if (vlSelf->reset) {
+        vlSymsp->__Vcoverage[88].fetch_add(1, std::memory_order_relaxed);
+        __Vdly__out = (((IData)(vlSelf->Exercise3__DOT__b_in) 
+                        << 8U) | (IData)(vlSelf->Exercise3__DOT__a_in));
+        __Vdly__Exercise3__DOT__gamma__DOT__count = 0U;
+    } else {
+        if ((0U == (IData)(vlSelf->Exercise3__DOT__gamma__DOT__count))) {
+            __Vdly__out = (((IData)(vlSelf->Exercise3__DOT__a_in) 
+                            << 8U) | (0xffU & (IData)(vlSelf->out)));
+        } else if ((1U == (IData)(vlSelf->Exercise3__DOT__gamma__DOT__count))) {
+            __Vdly__out = ((0xff00U & (IData)(vlSelf->out)) 
+                           | (IData)(vlSelf->Exercise3__DOT__b_in));
+        } else if ((2U == (IData)(vlSelf->Exercise3__DOT__gamma__DOT__count))) {
+            __Vdly__out = ((0xff00U & ((IData)(vlSelf->out) 
+                                       << 8U)) | (0xffU 
+                                                  & ((IData)(vlSelf->out) 
+                                                     >> 8U)));
+        } else if ((3U == (IData)(vlSelf->Exercise3__DOT__gamma__DOT__count))) {
+            __Vdly__out = ((0xf000U & ((IData)(vlSelf->out) 
+                                       << 0xcU)) | 
+                           ((0xf00U & ((IData)(vlSelf->out) 
+                                       << 4U)) | ((0xf0U 
+                                                   & ((IData)(vlSelf->out) 
+                                                      >> 4U)) 
+                                                  | (0xfU 
+                                                     & ((IData)(vlSelf->out) 
+                                                        >> 0xcU)))));
+        } else if ((4U == (IData)(vlSelf->Exercise3__DOT__gamma__DOT__count))) {
+            __Vdly__out = (1U & VL_REDXOR_16(vlSelf->out));
+        }
+        __Vdly__Exercise3__DOT__gamma__DOT__count = 
+            (7U & VL_MODDIV_III(32, ((IData)(1U) + (IData)(vlSelf->Exercise3__DOT__gamma__DOT__count)), (IData)(5U)));
+    }
+    vlSelf->Exercise3__DOT__gamma__DOT__count = __Vdly__Exercise3__DOT__gamma__DOT__count;
+    vlSelf->out = __Vdly__out;
+    if ((1U & ((IData)(vlSelf->Exercise3__DOT__gamma__DOT__count) 
+               ^ (IData)(vlSelf->Exercise3__DOT__gamma__DOT____Vtogcov__count)))) {
+        vlSymsp->__Vcoverage[80].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT__gamma__DOT____Vtogcov__count 
+            = ((6U & (IData)(vlSelf->Exercise3__DOT__gamma__DOT____Vtogcov__count)) 
+               | (1U & (IData)(vlSelf->Exercise3__DOT__gamma__DOT__count)));
+    }
+    if ((2U & ((IData)(vlSelf->Exercise3__DOT__gamma__DOT__count) 
+               ^ (IData)(vlSelf->Exercise3__DOT__gamma__DOT____Vtogcov__count)))) {
+        vlSymsp->__Vcoverage[81].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT__gamma__DOT____Vtogcov__count 
+            = ((5U & (IData)(vlSelf->Exercise3__DOT__gamma__DOT____Vtogcov__count)) 
+               | (2U & (IData)(vlSelf->Exercise3__DOT__gamma__DOT__count)));
+    }
+    if ((4U & ((IData)(vlSelf->Exercise3__DOT__gamma__DOT__count) 
+               ^ (IData)(vlSelf->Exercise3__DOT__gamma__DOT____Vtogcov__count)))) {
+        vlSymsp->__Vcoverage[82].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT__gamma__DOT____Vtogcov__count 
+            = ((3U & (IData)(vlSelf->Exercise3__DOT__gamma__DOT____Vtogcov__count)) 
+               | (4U & (IData)(vlSelf->Exercise3__DOT__gamma__DOT__count)));
+    }
+    if ((1U & ((IData)(vlSelf->out) ^ (IData)(vlSelf->Exercise3__DOT____Vtogcov__out)))) {
+        vlSymsp->__Vcoverage[38].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT____Vtogcov__out = ((0xfffeU 
+                                                   & (IData)(vlSelf->Exercise3__DOT____Vtogcov__out)) 
+                                                  | (1U 
+                                                     & (IData)(vlSelf->out)));
+    }
+    if ((2U & ((IData)(vlSelf->out) ^ (IData)(vlSelf->Exercise3__DOT____Vtogcov__out)))) {
+        vlSymsp->__Vcoverage[39].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT____Vtogcov__out = ((0xfffdU 
+                                                   & (IData)(vlSelf->Exercise3__DOT____Vtogcov__out)) 
+                                                  | (2U 
+                                                     & (IData)(vlSelf->out)));
+    }
+    if ((4U & ((IData)(vlSelf->out) ^ (IData)(vlSelf->Exercise3__DOT____Vtogcov__out)))) {
+        vlSymsp->__Vcoverage[40].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT____Vtogcov__out = ((0xfffbU 
+                                                   & (IData)(vlSelf->Exercise3__DOT____Vtogcov__out)) 
+                                                  | (4U 
+                                                     & (IData)(vlSelf->out)));
+    }
+    if ((8U & ((IData)(vlSelf->out) ^ (IData)(vlSelf->Exercise3__DOT____Vtogcov__out)))) {
+        vlSymsp->__Vcoverage[41].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT____Vtogcov__out = ((0xfff7U 
+                                                   & (IData)(vlSelf->Exercise3__DOT____Vtogcov__out)) 
+                                                  | (8U 
+                                                     & (IData)(vlSelf->out)));
+    }
+    if ((0x10U & ((IData)(vlSelf->out) ^ (IData)(vlSelf->Exercise3__DOT____Vtogcov__out)))) {
+        vlSymsp->__Vcoverage[42].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT____Vtogcov__out = ((0xffefU 
+                                                   & (IData)(vlSelf->Exercise3__DOT____Vtogcov__out)) 
+                                                  | (0x10U 
+                                                     & (IData)(vlSelf->out)));
+    }
+    if ((0x20U & ((IData)(vlSelf->out) ^ (IData)(vlSelf->Exercise3__DOT____Vtogcov__out)))) {
+        vlSymsp->__Vcoverage[43].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT____Vtogcov__out = ((0xffdfU 
+                                                   & (IData)(vlSelf->Exercise3__DOT____Vtogcov__out)) 
+                                                  | (0x20U 
+                                                     & (IData)(vlSelf->out)));
+    }
+    if ((0x40U & ((IData)(vlSelf->out) ^ (IData)(vlSelf->Exercise3__DOT____Vtogcov__out)))) {
+        vlSymsp->__Vcoverage[44].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT____Vtogcov__out = ((0xffbfU 
+                                                   & (IData)(vlSelf->Exercise3__DOT____Vtogcov__out)) 
+                                                  | (0x40U 
+                                                     & (IData)(vlSelf->out)));
+    }
+    if ((0x80U & ((IData)(vlSelf->out) ^ (IData)(vlSelf->Exercise3__DOT____Vtogcov__out)))) {
+        vlSymsp->__Vcoverage[45].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT____Vtogcov__out = ((0xff7fU 
+                                                   & (IData)(vlSelf->Exercise3__DOT____Vtogcov__out)) 
+                                                  | (0x80U 
+                                                     & (IData)(vlSelf->out)));
+    }
+    if ((0x100U & ((IData)(vlSelf->out) ^ (IData)(vlSelf->Exercise3__DOT____Vtogcov__out)))) {
+        vlSymsp->__Vcoverage[46].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT____Vtogcov__out = ((0xfeffU 
+                                                   & (IData)(vlSelf->Exercise3__DOT____Vtogcov__out)) 
+                                                  | (0x100U 
+                                                     & (IData)(vlSelf->out)));
+    }
+    if ((0x200U & ((IData)(vlSelf->out) ^ (IData)(vlSelf->Exercise3__DOT____Vtogcov__out)))) {
+        vlSymsp->__Vcoverage[47].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT____Vtogcov__out = ((0xfdffU 
+                                                   & (IData)(vlSelf->Exercise3__DOT____Vtogcov__out)) 
+                                                  | (0x200U 
+                                                     & (IData)(vlSelf->out)));
+    }
+    if ((0x400U & ((IData)(vlSelf->out) ^ (IData)(vlSelf->Exercise3__DOT____Vtogcov__out)))) {
+        vlSymsp->__Vcoverage[48].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT____Vtogcov__out = ((0xfbffU 
+                                                   & (IData)(vlSelf->Exercise3__DOT____Vtogcov__out)) 
+                                                  | (0x400U 
+                                                     & (IData)(vlSelf->out)));
+    }
+    if ((0x800U & ((IData)(vlSelf->out) ^ (IData)(vlSelf->Exercise3__DOT____Vtogcov__out)))) {
+        vlSymsp->__Vcoverage[49].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT____Vtogcov__out = ((0xf7ffU 
+                                                   & (IData)(vlSelf->Exercise3__DOT____Vtogcov__out)) 
+                                                  | (0x800U 
+                                                     & (IData)(vlSelf->out)));
+    }
+    if ((0x1000U & ((IData)(vlSelf->out) ^ (IData)(vlSelf->Exercise3__DOT____Vtogcov__out)))) {
+        vlSymsp->__Vcoverage[50].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT____Vtogcov__out = ((0xefffU 
+                                                   & (IData)(vlSelf->Exercise3__DOT____Vtogcov__out)) 
+                                                  | (0x1000U 
+                                                     & (IData)(vlSelf->out)));
+    }
+    if ((0x2000U & ((IData)(vlSelf->out) ^ (IData)(vlSelf->Exercise3__DOT____Vtogcov__out)))) {
+        vlSymsp->__Vcoverage[51].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT____Vtogcov__out = ((0xdfffU 
+                                                   & (IData)(vlSelf->Exercise3__DOT____Vtogcov__out)) 
+                                                  | (0x2000U 
+                                                     & (IData)(vlSelf->out)));
+    }
+    if ((0x4000U & ((IData)(vlSelf->out) ^ (IData)(vlSelf->Exercise3__DOT____Vtogcov__out)))) {
+        vlSymsp->__Vcoverage[52].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT____Vtogcov__out = ((0xbfffU 
+                                                   & (IData)(vlSelf->Exercise3__DOT____Vtogcov__out)) 
+                                                  | (0x4000U 
+                                                     & (IData)(vlSelf->out)));
+    }
+    if ((0x8000U & ((IData)(vlSelf->out) ^ (IData)(vlSelf->Exercise3__DOT____Vtogcov__out)))) {
+        vlSymsp->__Vcoverage[53].fetch_add(1, std::memory_order_relaxed);
+        vlSelf->Exercise3__DOT____Vtogcov__out = ((0x7fffU 
+                                                   & (IData)(vlSelf->Exercise3__DOT____Vtogcov__out)) 
+                                                  | (0x8000U 
+                                                     & (IData)(vlSelf->out)));
+    }
+}

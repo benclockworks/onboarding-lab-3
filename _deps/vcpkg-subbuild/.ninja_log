@@ -1,0 +1,21 @@
+# ninja log v5
+0	8	1696736332932250957	vcpkg-populate-prefix/src/vcpkg-populate-stamp/vcpkg-populate-mkdir	a02719c54cbc64bc
+0	8	1696736332932250957	/Users/benchikbayor/Desktop/onboarding-lab-3/_deps/vcpkg-subbuild/vcpkg-populate-prefix/src/vcpkg-populate-stamp/vcpkg-populate-mkdir	a02719c54cbc64bc
+8	5419	1696736338342868913	vcpkg-populate-prefix/src/vcpkg-populate-stamp/vcpkg-populate-download	a2f19d80717cff4
+8	5419	1696736338342868913	/Users/benchikbayor/Desktop/onboarding-lab-3/_deps/vcpkg-subbuild/vcpkg-populate-prefix/src/vcpkg-populate-stamp/vcpkg-populate-download	a2f19d80717cff4
+5419	5808	0	vcpkg-populate-prefix/src/vcpkg-populate-stamp/vcpkg-populate-update	65929f46faf400e2
+5419	5808	0	/Users/benchikbayor/Desktop/onboarding-lab-3/_deps/vcpkg-subbuild/vcpkg-populate-prefix/src/vcpkg-populate-stamp/vcpkg-populate-update	65929f46faf400e2
+5808	5817	1696736338741285412	vcpkg-populate-prefix/src/vcpkg-populate-stamp/vcpkg-populate-patch	560c9d9ab81d4347
+5808	5817	1696736338741285412	/Users/benchikbayor/Desktop/onboarding-lab-3/_deps/vcpkg-subbuild/vcpkg-populate-prefix/src/vcpkg-populate-stamp/vcpkg-populate-patch	560c9d9ab81d4347
+5817	5828	1696736338752100644	vcpkg-populate-prefix/src/vcpkg-populate-stamp/vcpkg-populate-configure	b04a6b0939f27e1
+5817	5828	1696736338752100644	/Users/benchikbayor/Desktop/onboarding-lab-3/_deps/vcpkg-subbuild/vcpkg-populate-prefix/src/vcpkg-populate-stamp/vcpkg-populate-configure	b04a6b0939f27e1
+5828	5837	1696736338761612711	vcpkg-populate-prefix/src/vcpkg-populate-stamp/vcpkg-populate-build	ec4f45a77736e8d8
+5828	5837	1696736338761612711	/Users/benchikbayor/Desktop/onboarding-lab-3/_deps/vcpkg-subbuild/vcpkg-populate-prefix/src/vcpkg-populate-stamp/vcpkg-populate-build	ec4f45a77736e8d8
+5838	5848	1696736338772414193	vcpkg-populate-prefix/src/vcpkg-populate-stamp/vcpkg-populate-install	ffc8729291b1878b
+5838	5848	1696736338772414193	/Users/benchikbayor/Desktop/onboarding-lab-3/_deps/vcpkg-subbuild/vcpkg-populate-prefix/src/vcpkg-populate-stamp/vcpkg-populate-install	ffc8729291b1878b
+5848	5859	1696736338782974467	vcpkg-populate-prefix/src/vcpkg-populate-stamp/vcpkg-populate-test	d3eb5edc2b256bbb
+5848	5859	1696736338782974467	/Users/benchikbayor/Desktop/onboarding-lab-3/_deps/vcpkg-subbuild/vcpkg-populate-prefix/src/vcpkg-populate-stamp/vcpkg-populate-test	d3eb5edc2b256bbb
+5859	5884	1696736338807503176	CMakeFiles/vcpkg-populate-complete	1b719f1737e37ae7
+5859	5884	1696736338807503176	vcpkg-populate-prefix/src/vcpkg-populate-stamp/vcpkg-populate-done	1b719f1737e37ae7
+5859	5884	1696736338807503176	/Users/benchikbayor/Desktop/onboarding-lab-3/_deps/vcpkg-subbuild/CMakeFiles/vcpkg-populate-complete	1b719f1737e37ae7
+5859	5884	1696736338807503176	/Users/benchikbayor/Desktop/onboarding-lab-3/_deps/vcpkg-subbuild/vcpkg-populate-prefix/src/vcpkg-populate-stamp/vcpkg-populate-done	1b719f1737e37ae7

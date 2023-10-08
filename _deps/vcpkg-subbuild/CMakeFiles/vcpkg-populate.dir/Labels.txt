@@ -1,0 +1,14 @@
+# Target labels
+ vcpkg-populate
+# Source files and their labels
+/Users/benchikbayor/Desktop/onboarding-lab-3/_deps/vcpkg-subbuild/CMakeFiles/vcpkg-populate
+/Users/benchikbayor/Desktop/onboarding-lab-3/_deps/vcpkg-subbuild/CMakeFiles/vcpkg-populate.rule
+/Users/benchikbayor/Desktop/onboarding-lab-3/_deps/vcpkg-subbuild/CMakeFiles/vcpkg-populate-complete.rule
+/Users/benchikbayor/Desktop/onboarding-lab-3/_deps/vcpkg-subbuild/vcpkg-populate-prefix/src/vcpkg-populate-stamp/vcpkg-populate-build.rule
+/Users/benchikbayor/Desktop/onboarding-lab-3/_deps/vcpkg-subbuild/vcpkg-populate-prefix/src/vcpkg-populate-stamp/vcpkg-populate-configure.rule
+/Users/benchikbayor/Desktop/onboarding-lab-3/_deps/vcpkg-subbuild/vcpkg-populate-prefix/src/vcpkg-populate-stamp/vcpkg-populate-download.rule
+/Users/benchikbayor/Desktop/onboarding-lab-3/_deps/vcpkg-subbuild/vcpkg-populate-prefix/src/vcpkg-populate-stamp/vcpkg-populate-install.rule
+/Users/benchikbayor/Desktop/onboarding-lab-3/_deps/vcpkg-subbuild/vcpkg-populate-prefix/src/vcpkg-populate-stamp/vcpkg-populate-mkdir.rule
+/Users/benchikbayor/Desktop/onboarding-lab-3/_deps/vcpkg-subbuild/vcpkg-populate-prefix/src/vcpkg-populate-stamp/vcpkg-populate-patch.rule
+/Users/benchikbayor/Desktop/onboarding-lab-3/_deps/vcpkg-subbuild/vcpkg-populate-prefix/src/vcpkg-populate-stamp/vcpkg-populate-test.rule
+/Users/benchikbayor/Desktop/onboarding-lab-3/_deps/vcpkg-subbuild/vcpkg-populate-prefix/src/vcpkg-populate-stamp/vcpkg-populate-update.rule

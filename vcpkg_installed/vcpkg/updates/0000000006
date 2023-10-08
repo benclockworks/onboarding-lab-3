@@ -1,0 +1,9 @@
+Package: nyu-cmake
+Version: 1.1.0
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: arm64-osx
+Multi-Arch: same
+Maintainer: Vito Gamberini <vito@gamberini.email>
+Abi: 5a28ede5e1744db25a3b2ba777686901b27faaed695beaf052307d8c96b33a20
+Description: NYU Processor Design's CMake function repo
+Status: install ok half-installed

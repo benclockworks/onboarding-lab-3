@@ -1,0 +1,77 @@
+Fetching registry information from https://github.com/microsoft/vcpkg.git (HEAD)...
+Fetching registry information from https://github.com/NYU-Processor-Design/nyu-registry.git (HEAD)...
+Detecting compiler hash for triplet arm64-osx...
+The following packages will be built and installed:
+    catch2:arm64-osx -> 3.2.1 -- /Users/benchikbayor/.cache/vcpkg/registries/git-trees/43e022b806928c512e298052ad4fae210998a846
+    nyu-cmake:arm64-osx -> 1.1.0 -- /Users/benchikbayor/.cache/vcpkg/registries/git-trees/c75ffde9378e09219e5003d2b128b7c39ba516d9
+  * vcpkg-cmake:arm64-osx -> 2022-11-13 -- /Users/benchikbayor/.cache/vcpkg/registries/git-trees/3adf8df8d492adfc105a09c6e50b913e662178b6
+  * vcpkg-cmake-config:arm64-osx -> 2022-02-06#1 -- /Users/benchikbayor/.cache/vcpkg/registries/git-trees/8d54cc4f487d51b655abec5f9c9c3f86ca83311f
+Additional packages (*) will be modified to complete this operation.
+Restored 1 package(s) from /Users/benchikbayor/.cache/vcpkg/archives in 5.87 ms. Use --debug to see more details.
+Installing 1/4 vcpkg-cmake-config:arm64-osx...
+Elapsed time to handle vcpkg-cmake-config:arm64-osx: 1.47 ms
+Installing 2/4 vcpkg-cmake:arm64-osx...
+Building vcpkg-cmake:arm64-osx...
+warning: -- Using community triplet arm64-osx. This triplet configuration is not guaranteed to succeed.
+-- [COMMUNITY] Loading triplet configuration from: /Users/benchikbayor/Desktop/onboarding-lab-3/_deps/vcpkg-src/triplets/community/arm64-osx.cmake
+-- Installing port from location: /Users/benchikbayor/.cache/vcpkg/registries/git-trees/3adf8df8d492adfc105a09c6e50b913e662178b6
+-- Installing: /Users/benchikbayor/Desktop/onboarding-lab-3/_deps/vcpkg-src/packages/vcpkg-cmake_arm64-osx/share/vcpkg-cmake/vcpkg_cmake_configure.cmake
+-- Installing: /Users/benchikbayor/Desktop/onboarding-lab-3/_deps/vcpkg-src/packages/vcpkg-cmake_arm64-osx/share/vcpkg-cmake/vcpkg_cmake_build.cmake
+-- Installing: /Users/benchikbayor/Desktop/onboarding-lab-3/_deps/vcpkg-src/packages/vcpkg-cmake_arm64-osx/share/vcpkg-cmake/vcpkg_cmake_install.cmake
+-- Installing: /Users/benchikbayor/Desktop/onboarding-lab-3/_deps/vcpkg-src/packages/vcpkg-cmake_arm64-osx/share/vcpkg-cmake/vcpkg-port-config.cmake
+-- Installing: /Users/benchikbayor/Desktop/onboarding-lab-3/_deps/vcpkg-src/packages/vcpkg-cmake_arm64-osx/share/vcpkg-cmake/copyright
+-- Performing post-build validation
+Stored binaries in 1 destinations in 7.93 ms.
+Elapsed time to handle vcpkg-cmake:arm64-osx: 26.1 ms
+Installing 3/4 catch2:arm64-osx...
+Building catch2:arm64-osx...
+warning: -- Using community triplet arm64-osx. This triplet configuration is not guaranteed to succeed.
+-- [COMMUNITY] Loading triplet configuration from: /Users/benchikbayor/Desktop/onboarding-lab-3/_deps/vcpkg-src/triplets/community/arm64-osx.cmake
+-- Installing port from location: /Users/benchikbayor/.cache/vcpkg/registries/git-trees/43e022b806928c512e298052ad4fae210998a846
+-- Downloading https://github.com/catchorg/Catch2/archive/v3.2.1.tar.gz -> catchorg-Catch2-v3.2.1.tar.gz...
+-- Extracting source /Users/benchikbayor/Desktop/onboarding-lab-3/_deps/vcpkg-src/downloads/catchorg-Catch2-v3.2.1.tar.gz
+-- Applying patch fix-install-path.patch
+-- Using source at /Users/benchikbayor/Desktop/onboarding-lab-3/_deps/vcpkg-src/buildtrees/catch2/src/v3.2.1-3402b475e3.clean
+-- Found external ninja('1.11.1.git.kitware.jobserver-1').
+-- Configuring arm64-osx
+-- Building arm64-osx-dbg
+-- Building arm64-osx-rel
+-- Fixing pkgconfig file: /Users/benchikbayor/Desktop/onboarding-lab-3/_deps/vcpkg-src/packages/catch2_arm64-osx/lib/pkgconfig/catch2-with-main.pc
+-- Fixing pkgconfig file: /Users/benchikbayor/Desktop/onboarding-lab-3/_deps/vcpkg-src/packages/catch2_arm64-osx/lib/pkgconfig/catch2.pc
+-- Fixing pkgconfig file: /Users/benchikbayor/Desktop/onboarding-lab-3/_deps/vcpkg-src/packages/catch2_arm64-osx/debug/lib/pkgconfig/catch2-with-main.pc
+-- Fixing pkgconfig file: /Users/benchikbayor/Desktop/onboarding-lab-3/_deps/vcpkg-src/packages/catch2_arm64-osx/debug/lib/pkgconfig/catch2.pc
+-- Installing: /Users/benchikbayor/Desktop/onboarding-lab-3/_deps/vcpkg-src/packages/catch2_arm64-osx/share/catch2/copyright
+-- Performing post-build validation
+Stored binaries in 1 destinations in 769 ms.
+Elapsed time to handle catch2:arm64-osx: 18 s
+Installing 4/4 nyu-cmake:arm64-osx...
+Building nyu-cmake:arm64-osx...
+warning: -- Using community triplet arm64-osx. This triplet configuration is not guaranteed to succeed.
+-- [COMMUNITY] Loading triplet configuration from: /Users/benchikbayor/Desktop/onboarding-lab-3/_deps/vcpkg-src/triplets/community/arm64-osx.cmake
+-- Installing port from location: /Users/benchikbayor/.cache/vcpkg/registries/git-trees/c75ffde9378e09219e5003d2b128b7c39ba516d9
+-- Downloading https://github.com/NYU-Processor-Design/nyu-cmake/archive/83af57eabac9e6580e4a538d566ccbc0de50aff6.tar.gz -> NYU-Processor-Design-nyu-cmake-83af57eabac9e6580e4a538d566ccbc0de50aff6.tar.gz...
+-- Extracting source /Users/benchikbayor/Desktop/onboarding-lab-3/_deps/vcpkg-src/downloads/NYU-Processor-Design-nyu-cmake-83af57eabac9e6580e4a538d566ccbc0de50aff6.tar.gz
+-- Using source at /Users/benchikbayor/Desktop/onboarding-lab-3/_deps/vcpkg-src/buildtrees/nyu-cmake/src/c0de50aff6-3d6fe28f57.clean
+-- Found external ninja('1.11.1.git.kitware.jobserver-1').
+-- Configuring arm64-osx
+-- Building arm64-osx-dbg
+-- Building arm64-osx-rel
+-- Installing: /Users/benchikbayor/Desktop/onboarding-lab-3/_deps/vcpkg-src/packages/nyu-cmake_arm64-osx/share/nyu-cmake/copyright
+-- Installing: /Users/benchikbayor/Desktop/onboarding-lab-3/_deps/vcpkg-src/packages/nyu-cmake_arm64-osx/share/nyu-cmake/usage
+-- Performing post-build validation
+Stored binaries in 1 destinations in 5.11 ms.
+Elapsed time to handle nyu-cmake:arm64-osx: 1.6 s
+Total install time: 19 s
+catch2 provides CMake targets:
+
+  # this is heuristically generated, and may not be correct
+  find_package(Catch2 CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE Catch2::Catch2 Catch2::Catch2WithMain)
+
+nyu-cmake does not provide any targets, only functions
+
+    find_package(nyu-cmake CONFIG REQUIRED)
+
+    nyu_add_sv(target verilog.sv)
+    nyu_verilate(target)
+
